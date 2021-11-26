@@ -158,11 +158,11 @@ footer .img img{
 }
 footer .text{
     margin-top: -35%;
-    font-family: var(--font-page);
     padding-bottom: 100px;
 }
 footer .text h2{
     font-size: 2.4rem;
+    font-family: var(--font-page);
 }
 footer .text p{
     font-size: var(--text-size);
@@ -183,7 +183,7 @@ footer .text a{
     }
     footer .row{
         flex-direction: row-reverse;
-        background-color: var(--neu-l-grayish-blue)
+        background-color: var(--new-ve-light-gray)
     }
     footer .img{
         overflow: hidden;
@@ -217,5 +217,54 @@ footer .text a{
 }
 /*sections*/
 #why{
-    background-color: var(--new-ve-light-gray);
+    background-color: var(--neu-l-grayish-blue);
+}
+#why .header{
+    padding-top: 50px;
+}
+#why .header h2{
+    font-size: 2rem;
+    padding: 25px 25px 10px;
+    font-family: var(--font-page);
+}
+#why .header p{
+    font-size: var(--text-size);
+    color: var(--neu-grayish-blue);
+}
+#why .items{
+    text-align: center;
+    padding: 15px;
+    
+}
+#why .items .item{
+    padding: 20px 10px;
+}
+#why .items .item h3{
+    margin: 20px 0;
+    font-family: var(--font-page);
+}
+#why .items .item p{
+    color: var(--neu-grayish-blue);
+    font-size: 16px;
+}
+
+@media(min-width: 768px){
+    main{
+        margin-top: -15%;
+    }
+    #why {
+        padding: 25px 0;
+    }
+    #why .header{
+        text-align: left !important;
+    }
+    #why .header h2{
+        padding: 20px 0;
+    }
+    #why .header p{
+        width: 600px;
+    }
+    #why .items{
+        text-align: left;
+    }
 }
