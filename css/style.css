@@ -268,3 +268,58 @@ footer .text a{
         text-align: left;
     }
 }
+
+/*Inicio section2 (articles)*/
+#articles{
+    background-color: var(--new-ve-light-gray);
+    padding: 50px 0;
+}
+#articles .header{
+    text-align: center;
+    font-family: var(--font-page);
+}
+#articles .header h2{
+    font-size: 2rem;
+}
+#articles .article .card{
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+}
+#articles .article .card img{
+    border-radius: 10px 10px 0 0;
+}
+#articles .article .card .card-body{
+    padding: 30px;
+}
+#articles .card .card-author{
+    font-size: 12px;
+    font-family: var(--font-page);
+    color: var(--neu-grayish-blue);
+}
+#articles .card .card-title{
+    padding: 0;
+    font-size: 17px;
+    font-family: var(--font-page);
+    margin-bottom: 15px;
+}
+#articles .card .card-text{
+    color: var(--neu-grayish-blue);
+    font-family: var(--font-page);
+    font-size: 14px;
+}
+@media(min-width: 768px){
+    #articles .header{
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    #articles .header h2{
+        font-weight: 300;
+    }
+    #articles .article .card .card-body{
+        padding: 20px;
+    }
+    #articles .article .card img{
+        height: 200px;
+    }
+}
