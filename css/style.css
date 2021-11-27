@@ -3,7 +3,7 @@
     --font-page: 'Public Sans', sans-serif;
     --text-size: 16px;
     /*Primary colors*/
-    --pri-dark-blue: hsl(133, 26%, 24%);
+    --pri-dark-blue: hsl(233, 26%, 24%);
     --pri-lime-green: hsl(136,65%,51%);
     --pri-bright-cyan: hsl(192, 70%, 51%);
 
@@ -140,13 +140,13 @@
 }
 
 
-footer .img{
+header .footer .img{
     padding: 0;
 }
-footer .container{
+header .footer .container{
     max-width: none;
 }
-footer .img img{
+header .footer .img img{
     background-image: url(../img/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: 0 5.7rem;
@@ -156,20 +156,20 @@ footer .img img{
     top: -30%;
     z-index: -1;
 }
-footer .text{
+header .footer .text{
     margin-top: -35%;
     padding-bottom: 100px;
 }
-footer .text h2{
+header .footer .text h2{
     font-size: 2.4rem;
     font-family: var(--font-page);
 }
-footer .text p{
+header .footer .text p{
     font-size: var(--text-size);
     color: var(--neu-grayish-blue);
     margin-bottom: 50px;
 }
-footer .text a{
+header .footer .text a, footer .fin a{
     background-image: linear-gradient(to right ,var(--pri-lime-green), var(--pri-bright-cyan));
     padding: 1rem 2rem;
     border-radius: 25px;
@@ -178,38 +178,38 @@ footer .text a{
 }
 
 @media(min-width: 768px){
-    footer{
+    header .footer{
         height: 700px;
     }
-    footer .row{
+    header .footer .row{
         flex-direction: row-reverse;
         background-color: var(--new-ve-light-gray)
     }
-    footer .img{
+    header .footer .img{
         overflow: hidden;
         background-image: url(../img/bg-intro-desktop.svg);
         background-size: 50rem;
         background-position: 10% -6rem;
         background-repeat: no-repeat;
     }
-    footer .img img{
+    header .footer .img img{
         width: 40rem;
         top: -9rem;
         right: -6rem;
         z-index: 0;
         background: none;
     }
-    footer .text{
+    header .footer .text{
         margin: 0;
         padding-top: 10%;
         padding-left: 10%;
         text-align: left !important;
     }
-    footer .text h2{
+    header .footer .text h2{
         max-width: 400px;
         font-size: 50px;
     }
-    footer .text p{
+    header .footer .text p{
         font-size: var(--text-size);
         padding-right: 16%;
     }
@@ -321,5 +321,95 @@ footer .text a{
     }
     #articles .article .card img{
         height: 200px;
+    }
+}
+
+/*Footer*/
+footer{
+    background-color: var(--pri-dark-blue);
+    padding: 30px;
+}
+footer .header{
+    text-align: center;
+}
+footer .logo{
+    padding: 10px;
+}
+footer .redes{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+footer .redes li{
+    font-size: 2rem;
+    list-style: none;
+    padding: 5px;
+    
+}
+footer .redes a{
+    color: white;
+}
+footer .items{
+    text-align: center;
+}
+footer .item{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+footer .item li{
+    padding: 5px;
+}
+footer .item a{
+    font-family: var(--font-page);
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+footer .fin{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+footer .fin p{
+    padding-top: 40px;
+    font-family: var(--font-page);
+    color: var(--neu-l-grayish-blue);
+    font-weight: 300;
+    opacity: .8;
+}
+@media(min-width: 768px){
+    footer{
+        padding: 2%; 
+    }
+    footer .header{
+        position: relative;
+        padding-top: 10px;
+    }
+    footer .items{
+        display: flex;
+        text-align: left;
+        padding-top: 20px;
+    }
+    footer .item{
+        padding-right: 20%;
+    }
+    footer .item a{
+        font-size: 18px;
+    }
+    footer .item li{
+        padding: 5px 0;
+    }
+    footer .redes{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right:0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .logo img{
+        width: 10rem;
     }
 }
